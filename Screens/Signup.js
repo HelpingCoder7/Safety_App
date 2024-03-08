@@ -31,20 +31,15 @@ const Signup = () => {
   const navigateinter = () => { navigation.navigate(Login) }
   return (
     <LinearGradient
-      colors={['#D67D7C', 'white']}
+      colors={['#D67D7C', 'pink']}
       start={{ x: 1, y: 0 }}
       end={{ x: 0.2, y: 1 }}
       style={{ backgroundColor: '#D67D7C', height: '100%' }}>
 
-      <View>
-        <TouchableOpacity onPress={navigateinter}>
-          <Image source={require('../Screens/Images/arrow.png')}
-            style={{ height: 20, width: 50, paddingTop: 50, margin: 40 }} />
-        </TouchableOpacity>
-      </View>
+     
 
-      <ScrollView>
-        <View style={{ paddingBottom: 20, alignItems: 'center' }}>
+      <ScrollView > 
+        <View style={{ paddingBottom: 20, alignItems: 'center',paddingTop:150 }}>
           <Text style={{ fontSize: 70, paddingTop: 18, color: 'black' }}>
             Sign-up
           </Text>
@@ -87,7 +82,7 @@ const Signup = () => {
               }}
             />
 
-            <LinearGradient colors={['teal', 'black']}
+            <LinearGradient colors={['teal', 'grey']}
               style={{ height: 50, width: 280, margin: 30, borderRadius: 30 }}>
               <TouchableOpacity onPress={handlecreateauser}>
                 <Text style={{ alignItems: 'center', paddingTop: 10, paddingLeft: 80, fontSize: 20, color: 'white', fontWeight: 'bold' }}>Create Account</Text>

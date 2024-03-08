@@ -33,17 +33,17 @@ const Fir = () => {
 
 
     return (
-        <LinearGradient colors={['teal','transparent']}
-        start={{x:0,y:0.2}}
+        <LinearGradient colors={['#D67D7C','white']}
+        start={{x:0,y:0.7}}
         
         style={{height:'100%'}}>
-            <LinearGradient colors={['black', '#D67D7C']} style={{
+            <LinearGradient colors={['white', '#D67D7C']} style={{
                 justifyContent: 'center',
-                alignItems: 'center', top: 40, backgroundColor: 'brown',
+                alignItems: 'center', top: 40, backgroundColor: '#D67D7C',
                 height: 150, borderBottomLeftRadius: 80, borderBottomRightRadius: 80
             }}>
 
-                <Text style={{ fontSize: 40, top: 5, fontWeight: 'bold', color: 'pink' }}>
+                <Text style={{ fontSize: 40, top: 5, fontWeight: 'bold', color: 'black' }}>
                     REGISTER FIR
                 </Text>
             </LinearGradient>

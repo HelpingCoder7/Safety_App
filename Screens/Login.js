@@ -1,5 +1,5 @@
 import { View, Text, TextInput, TouchableOpacity, ScrollView, Alert, Image } from 'react-native'
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import {  getAuth, signInWithEmailAndPassword } from 'firebase/auth'
 import { initializeApp } from 'firebase/app'
 import { firebaseConfig } from '../firebaseconfig'
@@ -33,13 +33,12 @@ const Login = () => {
     }
 
 
-    const navgateinter = () => { navigation.navigate(Intermidiate) }
-    const navgatesignup = () => {console.log('data')}
+   
     return (
         <>
 
             <LinearGradient
-                colors={['#D67D7C', 'white']}
+                colors={['#D67D7C', 'pink']}
                 start={{ x: 1, y: 0 }}
                 end={{ x: 0.2, y: 1 }}
                 style={{ backgroundColor: '#D67D7C', height: '100%' }}>
