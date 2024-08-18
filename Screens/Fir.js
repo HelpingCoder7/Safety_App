@@ -82,7 +82,7 @@ const Fir = () => {
 
                         <TouchableOpacity onPress={createdata}>
                             <LinearGradient
-                                colors={['#FFA69E', '#861657']}
+                                colors={['teal', 'grey']}
                                 style={styles.LinearGradient}
                                 start={{ x: 0.8, y: 0.4 }}>
                                 <View style={{ alignItems: 'center', top: 5 }}>

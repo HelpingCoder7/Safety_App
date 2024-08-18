@@ -2,15 +2,16 @@ import { View, Text , StyleSheet,Image,ScrollView} from 'react-native'
 import React from 'react'
 import { BlurView } from 'expo-blur'
 import { LinearGradient } from 'expo-linear-gradient'
+import { SafeAreaView } from 'react-native-safe-area-context'
 
 const Precaution = () => {
   return (
 
-    <ScrollView style={{height:100}}>
+    <SafeAreaView>
    <LinearGradient colors={['#D67D7C','pink']} style={{height:'100%'}}>
 
     <View style={{alignItems:'center',top:90}}>
-      <Text style={{fontSize:50,color:'white'}}>
+      <Text style={{fontSize:50,color:'black'}}>
         Precautions
       </Text>
     </View>
@@ -45,7 +46,7 @@ const Precaution = () => {
 
     </LinearGradient>
 
-    </ScrollView>
+    </SafeAreaView>
   )
 }
 

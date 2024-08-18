@@ -1,14 +1,16 @@
 import { View, Text, StyleSheet, Image, TouchableOpacity,ToastAndroid } from 'react-native'
 import React ,{useEffect} from 'react'
 import * as SMS from 'expo-sms';
-import * as Linking from "expo-linking"
+import { Linking } from 'react-native';
+
+
 
 const Dashboard =  () => {
 
   useEffect(()=>{
     console.log('toast')
     setTimeout(() => {
-      ToastAndroid.showWithGravity(
+      ToastAndroid.show(
         'Welcome to Women Safety App',
         ToastAndroid.LONG,
         ToastAndroid.CENTER,
@@ -18,7 +20,7 @@ const Dashboard =  () => {
 })
 
 
-const phno =['+916264777794','+917724012216','+919098008180','+917987344458']
+const phno =['+919827763713']
 
 sendsms = async ()=>{
   const {result} = await SMS.sendSMSAsync(
@@ -29,8 +31,10 @@ sendsms = async ()=>{
 
 const makephonecall =  ()=>{
   try {
-    console.log('first')
-     Linking.openURL('tel:+919685426705')
+    console.log('call')
+    Linking.openURL('tel:+919827763713')
+    .catch(err => console.error('Error making phone call:', err));
+     
   } catch (error) {
     console.log(error)
   }
@@ -52,7 +56,7 @@ test = async()=>{console.log('hello')}
 
         <View style={styles.imagesview}>
 
-          <TouchableOpacity >
+          <TouchableOpacity onPress={makephonecall}>
             <Image source={require('./Images/callmg.png')} style={styles.imagestyle} />
             <Text style={styles.textstyle}> EMERGENCY CALL</Text>
           </TouchableOpacity>

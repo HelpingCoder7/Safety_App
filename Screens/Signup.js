@@ -81,14 +81,15 @@ const Signup = () => {
                 color: 'black'
               }}
             />
-
+<TouchableOpacity onPress={handlecreateauser}>
             <LinearGradient colors={['teal', 'grey']}
-              style={{ height: 50, width: 280, margin: 30, borderRadius: 30 }}>
-              <TouchableOpacity onPress={handlecreateauser}>
+              style={{ height: 50, width: 280, margin: 50, borderRadius: 30 }}>
+              
                 <Text style={{ alignItems: 'center', paddingTop: 10, paddingLeft: 80, fontSize: 20, color: 'white', fontWeight: 'bold' }}>Create Account</Text>
 
-              </TouchableOpacity>
+             
             </LinearGradient>
+            </TouchableOpacity>
 
           </View>
         </View>

@@ -5,7 +5,7 @@ import { LinearGradient } from 'expo-linear-gradient'
 
 const About = () => {
   return (
-    <LinearGradient colors={['pink','white']} 
+    <LinearGradient colors={['pink','pink']} 
     style={{height:'100%',}}>
 
   <View style={{alignItems:'center',top:70}}>
