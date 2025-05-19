@@ -31,9 +31,9 @@ const Signup = () => {
   const navigateinter = () => { navigation.navigate(Login) }
   return (
     <LinearGradient
-      colors={['#D67D7C', 'pink']}
-      start={{ x: 1, y: 0 }}
-      end={{ x: 0.2, y: 1 }}
+      colors={['white', 'pink']}
+      start={{ x: 0, y: 0 }}
+      end={{ x: 1, y: 1 }}
       style={{ backgroundColor: '#D67D7C', height: '100%' }}>
 
      
@@ -80,9 +80,11 @@ const Signup = () => {
                 borderRadius: 20,
                 color: 'black'
               }}
-            />
+            /> 
 <TouchableOpacity onPress={handlecreateauser}>
-            <LinearGradient colors={['teal', 'grey']}
+            <LinearGradient colors={['teal', 'black']}
+            start={{ x: 0, y: 0.2 }}
+                  end={{ x: 1, y: 0.5 }}
               style={{ height: 50, width: 280, margin: 50, borderRadius: 30 }}>
               
                 <Text style={{ alignItems: 'center', paddingTop: 10, paddingLeft: 80, fontSize: 20, color: 'white', fontWeight: 'bold' }}>Create Account</Text>

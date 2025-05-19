@@ -15,15 +15,15 @@ const About = () => {
 
     <View style={{display:'flex',flexDirection:'row',justifyContent:'space-around',}}>
     <LinearGradient 
-    colors={['pink','#D67D7C']}
-    start={{x:0.2,y:0}}
+    colors={['black','black']} 
+    
     style={styles.regfir}>
         <Text style={styles.boxtexstyle}>Registerd FIR</Text>
       </LinearGradient>
 
     <LinearGradient
-      colors={['pink','#D67D7C']}
-      start={{x:0.2,y:0}}
+      colors={['black','black']}
+      
     
     style={styles.regfir}>
         <Text style={styles.boxtexstyle}>Update Profile</Text>
@@ -80,11 +80,12 @@ const styles = StyleSheet.create({
     alignItems:'center',
     margin:20,
     top:170,
+    borderRadius:20
   },
   boxtexstyle:{
     fontSize:20,
     fontWeight:'bold',
-    color:'black'
+    color:'white'
   },
   logostyle:{
     height:180,

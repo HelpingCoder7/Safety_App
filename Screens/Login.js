@@ -40,10 +40,10 @@ const Login = () => {
   return (
     <>
       <LinearGradient
-        colors={["#D67D7C", "pink"]}
-        start={{ x: 1, y: 0 }}
-        end={{ x: 0.2, y: 1 }}
-        style={{ backgroundColor: "#D67D7C", height: "100%" }}
+        colors={["white", "pink"]}
+        start={{ x: 0, y: 0 }}
+        end={{ x: 1, y: 1 }}
+        style={{ backgroundColor: "", height: "100%" }}
       >
         <ScrollView style={{ top: 150 }}>
           <View style={{ paddingBottom: 20, alignItems: "center" }}>
@@ -99,7 +99,7 @@ const Login = () => {
 
               <TouchableOpacity onPress={handleuserlogin}>
                 <LinearGradient
-                  colors={["teal", "white"]}
+                  colors={["teal", "black"]}
                   start={{ x: 0, y: 0.2 }}
                   end={{ x: 1, y: 0.5 }}
                   style={{

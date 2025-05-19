@@ -33,11 +33,11 @@ const Fir = () => {
 
 
     return (
-        <LinearGradient colors={['#D67D7C','white']}
-        start={{x:0,y:0.7}}
+        <LinearGradient colors={['#D67D7C','pink']}
+       
         
         style={{height:'100%'}}>
-            <LinearGradient colors={['white', '#D67D7C']} style={{
+            <LinearGradient colors={['pink', '#D67D7C']} style={{
                 justifyContent: 'center',
                 alignItems: 'center', top: 40, backgroundColor: '#D67D7C',
                 height: 150, borderBottomLeftRadius: 80, borderBottomRightRadius: 80
@@ -82,9 +82,10 @@ const Fir = () => {
 
                         <TouchableOpacity onPress={createdata}>
                             <LinearGradient
-                                colors={['teal', 'grey']}
+                                colors={['teal', 'black']}
                                 style={styles.LinearGradient}
-                                start={{ x: 0.8, y: 0.4 }}>
+                               start={{ x: 0, y: 0.2 }}
+                  end={{ x: 1, y: 0.5 }}>
                                 <View style={{ alignItems: 'center', top: 5 }}>
                                     <Text style={{ fontSize: 25, fontWeight: 'bold', color: 'white' }}> Submit FIR</Text>
                                 </View>
